@@ -13,6 +13,7 @@ Usage:
 1. All scripts point at a config.ini, in which you have to type your personal Plex configuration. The template is provided, has to be renamed to config.ini and completed. See the official documentation how to get your server-ip and token. You have to provide the name of your musiclibrary as well. 
 2. In Windows, create a folder for that script. In this folder, put the script- and the ini-file. Then open a terminal in that folder and hit python (scriptname).py
 
+Categories
 1. Metadata Maintenance
 - PlexAddTextToRecordLabel:For searching purposes, it might come handy to use the field "record label" (internally called studio) with text. 
 You can do that in the plex UI, but only for albums one by one or, if for a multitude for albums, by substituting the old text completely. 
