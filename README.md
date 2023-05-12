@@ -20,3 +20,6 @@ You can do that in the plex UI, but only for albums one by one or, if for a mult
 With this script, you preserve the existing text. Use "lockfields.py " to save your changes from altering.
 
 - Lockfields: If metadata has been manually changed in the fields, it is good practice to lock the fields in order to protect them from automatic changes in the future. This tool locks the field "Record Label" (internally called "studio") in all albums in music playlists. 
+
+2. Playlists
+- playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
