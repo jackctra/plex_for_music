@@ -7,6 +7,7 @@ This is an unfinished project. Possible Categories are:
 1. Metadata Maintenance
 2. Playlists
 3. Interoperability with other tools.
+Additional scripts to fill these categories are welcome.
 
 Usage:
 1. All scripts point at a config.ini, in which you have to type your personal Plex configuration. The template is provided, has to be renamed to config.ini and completed. See the official documentation how to get your server-ip and token. You have to provide the name of your musiclibrary as well. 
