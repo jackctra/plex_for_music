@@ -7,7 +7,6 @@ This is an unfinished project. Possible Categories are:
 1. Metadata Maintenance
 2. Playlists
 3. Interoperability with other tools.
-Additional scripts to fill these categories are welcome.
 
 Usage:
 1. All scripts point at a config.ini, in which you have to type your personal Plex configuration. The template is provided, has to be renamed to config.ini and completed. See the official documentation how to get your server-ip and token. You have to provide the name of your musiclibrary as well. 
@@ -23,3 +22,7 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
+
+3. Interoperability
+- Export playlists for use in other software like Mediamonkey, foobar: https://forums.plex.tv/t/webtools-ng/598539
+- Playlist Import: Importing .m3u playlists into plex: https://github.com/gregchak/plex-playlist-import
