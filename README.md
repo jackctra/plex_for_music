@@ -3,10 +3,13 @@ Repository for Scripts helping optimize Music Libraries in Plex.
 Plex is a great tool for listening to music especially with plexamp. However, there are some issues with keeping the database meaningful, correct and clean. As plex mostly is used for movies and tv shows, there are considerably less scripts for music libraries around.
 These scripts were created for personal use to adress these issues and come with the warning that they need to be adapted for a different setting. 
 
-This is an unfinished project. Possible Categories (found in the branches) are:
+For starters, I will also mention third party work and provide a link if I have personal experience with the code. All other stuff which might be helpful should be mentioned in "Discussions" which I opened exactly for that reason.
+
+This is a continuing project. Possible Categories (found in the branches) are:
 1. Metadata Maintenance
 2. Playlists
 3. Interoperability with other tools.
+4. Plex Meta Manager configs for music libraries
 
 Usage:
 1. All scripts point at a config.ini, in which you have to type your personal Plex configuration. The template is provided, has to be renamed to config.ini and completed. See the official documentation how to get your server-ip and token. You have to provide the name of your musiclibrary as well. 
@@ -31,3 +34,6 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 - Export playlists for use in other software like Mediamonkey, foobar: https://forums.plex.tv/t/webtools-ng/598539
 - Playlist Import: Importing .m3u playlists into plex: https://github.com/gregchak/plex-playlist-import
 - not vet coded: script to query discogs and populate plex fields, see also above
+
+ 4. Plex Meta Manager configs
+ - overlays; I like that the album covers in plex and plexamp show which codec (mp3 or flac) was used to encode the album tracks. Looks good too. That is achieved with the overlays-function in Plex Meta  Manager. Configs for use in PMM will come in here.
