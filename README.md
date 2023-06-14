@@ -27,6 +27,8 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - CollectionMoodListandDelete: a script to check the moods appended to tracks in a collection and delete specific moods in the tracks. 
 
+- PlexFixMissingTitles: For reasons unknown to me, my library had lots of tracks without titles. To fix that, this script copies the track title from the filename. 
+
 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
 
