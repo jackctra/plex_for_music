@@ -15,7 +15,7 @@ Usage:
 1. All scripts point at a config.ini, in which you have to type your personal Plex configuration. The template is provided, has to be renamed to config.ini and completed. See the official documentation how to get your server-ip and token. You have to provide the name of your musiclibrary as well. 
 2. In Windows, create a folder for that script. In this folder, put the script- and the ini-file. Then open a terminal in that folder and hit python (scriptname).py
 
-# Branches
+# Categories
 1. Metadata Maintenance
 - PlexAddTextToRecordLabel:For searching purposes, it might come handy to use the field "record label" (internally called studio) with text. 
 You can do that in the plex UI, but only for albums one by one or, if for a multitude for albums, by substituting the old text completely. 
@@ -23,7 +23,7 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - Lockfields: If metadata has been manually changed in the fields, it is good practice to lock the fields in order to protect them from automatic changes in the future. This tool locks the field "Record Label" (internally called "studio") in all albums in music playlists. 
 
-- not yet coded: a script  to mass correct wrong entries in the fields: "originally available"and/or "year" becaus plexamp needs that for time travelling. Might use data from other sources like discogs.Might also fall under "Interoperability".
+- PlexRecordingDate: a script  to correct entries in the fields: "originally available"and/or "year" to the date of the recording, not the date of publishing, because plexamp needs that for time travelling. Think of Compilations spanning the career of an artist 10 years late.
 
 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
