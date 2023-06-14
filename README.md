@@ -30,7 +30,7 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
 
-- Deduplicator; There are interesting scripts around (https://github.com/YoonAddicting/PlexSmartPlaylistDeduplicator) which avoid duplicates being played twice in a list by tagging the duplicates which are listed after the first track of the same name as "duplicate". Script so far not be tested by me because I want the track with the best quality played, not any one. Although not always the case, bitrate could serve as aproxy for quality and tracks could be compared before deciding whether to tag them as a duplicate. 
+- Deduplicator; There are interesting scripts around (https://github.com/YoonAddicting/PlexSmartPlaylistDeduplicator) which avoid duplicates being played twice in a list by tagging the duplicates which are listed after the first track of the same name as "duplicate". Script so far not be tested by me because I want the track with the best quality played, not any one. A proper routine requires a very (!) good maintenance of the library, including same track titles, and a routine to compare both, tracks in an album by a specific artist and tracks in a compilation by various artist. See my blog for more details in the near future. 
 
 3. Interoperability
 - Export playlists for use in other software like Mediamonkey, foobar: https://forums.plex.tv/t/webtools-ng/598539
