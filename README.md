@@ -23,7 +23,7 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - Lockfields: If metadata has been manually changed in the fields, it is good practice to lock the fields in order to protect them from automatic changes in the future. This tool locks the field "Record Label" (internally called "studio") in all albums in music playlists. 
 
-- PlexRecordingDate: a script  to correct entries in the fields: "originally available"and/or "year" to the date of the recording, not the date of publishing, because plexamp needs that for time travelling. Think of Compilations spanning the career of an artist 10 years late.
+- PlexRecordingDate: a script  to correct entries in the fields: "originally available"and/or "year" to the date of the recording, not the date of publishing, because plexamp needs that for time travelling. Think of Compilations spanning the career of an artist 10 years later.
 
 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
