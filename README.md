@@ -1,7 +1,7 @@
 # plex-scripts for music libraries
 Repository for Scripts helping optimize Music Libraries in Plex.
 Plex is a great tool for listening to music especially with plexamp. However, there are some issues with keeping the database meaningful, correct and clean. As plex mostly is used for movies and tv shows, there are considerably less scripts for music libraries around.
-These scripts were created for personal use to adress these issues and come with the warning that they need to be adapted for a different setting. 
+These scripts were created for personal use to adress these issues with a windows machine and come with the warning that they need to be adapted for a different setting. 
 
 For starters, I will also mention third party work and provide a link if I have personal experience with the code. All other stuff which might be helpful should be mentioned in "Discussions" which I opened exactly for that reason.
 
@@ -27,7 +27,11 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - CollectionMoodListandDelete: a script to check the moods appended to tracks in a collection and delete specific moods in the tracks. 
 
-- PlexFixMissingTitles: For reasons unknown to me, my library had lots of tracks without titles. To fix that, this script copies the track title from the filename. 
+- PlexFixMissingTitles: For reasons unknown to me, my library had lots of tracks without titles. To fix that, this script copies the track title from the filename.
+
+- PlexCheckSimArtists: The script loops through all artists and allows for editing the similar artists associated with each artist.
+
+- PlexGetSummary: The script loops through all albums without a summary/review and allows for adding a summary. An allmusic.com page is opened to quickly scan, whether allmusic has a review.
 
 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
