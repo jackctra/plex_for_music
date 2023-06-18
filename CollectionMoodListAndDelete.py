@@ -1,4 +1,5 @@
 # This script accesses a music-tracks collection in plex, lists the moods appended to the tracks and allows for the deletion of an entry for all tracks in that collection. 
+# Thus, it adds the possibility to batch remove a mood from multiple tracks at once, which is missing in plex 
 # Enter baseurl, token to access plex, enter name of music library in plex. 
 
 from plexapi.server import PlexServer
