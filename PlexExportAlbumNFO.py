@@ -4,6 +4,7 @@
 # requires plexapi and a config.ini in the working folder and is written for windows.
 
 import os
+from tqdm import tqdm # library for progress bar
 from plexapi.server import PlexServer
 
 # read config.ini. In config.ini, insert your personal PlexUrl and PlexToken.
@@ -15,7 +16,7 @@ exec(config)
 plex = PlexServer(PLEX_URL, PLEX_TOKEN)
 albums = library.albums()
 
-for album in albums:
+for album in tqdm(albums, desc='Processing albums'): # extension to create progress bar
     # Get the path of the first track in the album to localize the album
         track = album.tracks()[0]
         linux_path = os.path.dirname(track.media[0].parts[0].file)
