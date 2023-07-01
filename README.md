@@ -23,7 +23,7 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - Lockfields: If metadata has been manually changed in the fields, it is good practice to lock the fields in order to protect them from automatic changes in the future. This tool locks the field "Record Label" (internally called "studio") in all albums in music playlists. 
 
-- PlexRecordingDate: a script  to correct entries in the fields: "originally available"and/or "year" to the date of the recording, not the date of publishing, because plexamp needs that for time travelling. Think of Compilations spanning the career of an artist 10 years later.
+- PlexRecordingDate: a script  to correct entries in the fields: "originally available"and/or "year" to the date of the recording, not the date of publishing, because plexamp needs that for time travelling. Think of Compilations spanning the career of an artist 10 years later. Backup your work with PlexExportAlbumNFO, below.
 
 - CollectionMoodListandDelete: a script to check the moods appended to tracks in a collection and delete specific moods in the tracks. 
 
@@ -31,17 +31,19 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - PlexCheckSimArtists: The script loops through all artists and allows for editing the similar artists associated with each artist.
 
-- PlexGetSummary: The script loops through all albums without a summary/review and allows for adding a summary. An allmusic.com page is opened to quickly scan, whether allmusic has a review.
+- PlexGetSummary: The script loops through all albums without a summary/review and allows for adding a summary. An allmusic.com page is opened to quickly scan, whether allmusic has a review. Backup your work with PlexExportAlbumNFO, below.
 
 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
 
 - Deduplicator; There are interesting scripts around (https://github.com/YoonAddicting/PlexSmartPlaylistDeduplicator) which avoid duplicates being played twice in a list by tagging the duplicates which are listed after the first track of the same name as "duplicate". Script so far not be tested by me because I want the track with the best quality played, not any one. A proper routine requires a very (!) good maintenance of the library, including same track titles, and a routine to compare both, tracks in an album by a specific artist and tracks in a compilation by various artist. See my blog for more details in the near future. 
 
-3. Interoperability
+3. Interoperability / Backups
 - Export playlists for use in other software like Mediamonkey, foobar: https://forums.plex.tv/t/webtools-ng/598539
 - Playlist Import: Importing .m3u playlists into plex: https://github.com/gregchak/plex-playlist-import
-- not vet coded: script to query discogs and populate plex fields, see also above
+- PlexRecordingDate: script to query discogs and populate the Release Date field, see above
+- PlexExportAlbumNFO: Script to backup all album reviews/summaries (if you added to those plex has created automatically) and the release date (nice if you use it for the recording date, 
+  see above).
 
  4. Plex Meta Manager configs
  - overlays; I like that the album covers in plex and plexamp show which codec (mp3 or flac) was used to encode the album tracks. Looks good too. That is achieved with the overlays-function in Plex Meta  Manager. Configs for use in PMM will come in here.
