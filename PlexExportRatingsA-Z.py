@@ -6,7 +6,7 @@
 # Also for albums beginning with special characters, a range is not possible. You have to process them seperately. Moreover some, as '+' will not work if not as the first letter of a string (i.e. +justments)
 # This version 0.2 includes a progress bar, lets user decide what to do with unsupported formats like ape and decapitalizes file endings to avoid errors if the ending is written with capital letters.
 # Before Usage install necessary requirements, create a config.ini and adapt the filepaths according to your setup (here the plex server runs on linux wheras the script is executed on a windows PC. You can probably skip some steps if you are running the script on the same machine)
-
+# Check if your software uses a different rating approach than mediamonkey. If so, adapt lines accordingly.
   
 import plexapi
 from plexapi.server import PlexServer
@@ -88,17 +88,17 @@ for album in tqdm(subset):
 
         # Load the audio file according to its format
         if file_ext.lower() == ".flac":
-            rating = int(rating * 10) # to make rating compatible with MediaMonkey
+            rating = int(rating * 10) # to make rating compatible with MediaMonkey, might have to be changed if you use other software.
             audio = FLAC(windows_path_file)
             # Use a custom tag for flac files
             audio["rating"] = str(rating)
         elif file_ext.lower() == ".mp3":
-            ratingvalue = int(rating * 25.5) # to make rating compatible with MediaMonkey
+            ratingvalue = int(rating * 25.5) # to make rating compatible with MediaMonkey, might have to be changed if you use other software.
             audio = MP3(windows_path_file)
             # Use POPM tag for mp3 files
             audio["POPM"] = mutagen.id3.POPM(email="", rating=ratingvalue, count="")
         elif file_ext.lower() == ".m4a":
-            ratingvalue = int(rating * 10) # to make rating compatible with MediaMonkey
+            ratingvalue = int(rating * 10) # to make rating compatible with MediaMonkey, might have to be changed if you use other software.
             audio = MP4(windows_path_file)
             # Use rate tag for mp4 files
             audio["rate"] = str(ratingvalue)
