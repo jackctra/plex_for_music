@@ -33,6 +33,10 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - PlexGetSummary: The script loops through all albums without a summary/review and allows for adding a summary. An allmusic.com page is opened to quickly scan, whether allmusic has a review. Backup your work with PlexExportAlbumNFO, below.
 
+- PlexExportRatingA-Z: The script copies the user ratings of individual tracks in plex to the tags of mp3 and flac files, uses an album by album approach
+
+- PlexExportRecentRatings: The script copies the user ratings of individual tracks in plex to the tags of mp3 and flac files, uses a time based approach
+
 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
 
@@ -44,6 +48,8 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 - PlexRecordingDate: script to query discogs and populate the Release Date field, see above
 - PlexExportAlbumNFO: Script to backup all album reviews/summaries (if you added to those plex has created automatically) and the release date (nice if you use it for the recording date, 
   see above).
+- PlexExportRatingA-Z: The script copies the user ratings of individual tracks in plex to the tags of mp3 and flac files, uses an album by album approach
+- PlexExportRecentRatings: The script copies the user ratings of individual tracks in plex to the tags of mp3 and flac files, uses a time based approach
 
  4. Plex Meta Manager configs
  - overlays; I like that the album covers in plex and plexamp show which codec (mp3 or flac) was used to encode the album tracks. Looks good too. That is achieved with the overlays-function in Plex Meta  Manager. Configs for use in PMM will come in here.
