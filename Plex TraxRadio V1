@@ -1,6 +1,6 @@
 """Plex TraxRadio V1 is a script that takes user input and fetches the rating key either 
 of a specific track or optionally the whole album. Needs plexapi 4.15.6 and an ini file. 
-It fills the playlist with tracks from the artist who has recorded the source track, and tracks from albums of other artists and from compilations. 
+It fills the playlist with tracks from the artist who has recorded the source track, and tracks from albums of other artists. 
 Sonic Similarity of the tracks and the number of tracks in the Radio playlist can be adjusted. Duplicates are sorted out if the tracks are tagged as either Duplicate or X in the moods field.  
 The user can choose to add a second source track to the playlist to find more tracks or for variation. 
 Also, the rating is looked at and tracks with a rating lesser than ***1/2 are sorted out. """
@@ -132,7 +132,7 @@ def find_sonically_similar_tracks(track):
         print(f"{i+1}. {result.grandparentTitle}/{result.originalTitle} - {result.title} , rated '{result.userRating}'")
     # check if user has chosen a 2nd source track, then sst should be shorter than all_similar_tracks minus the first source track
     if len(sonically_similar_tracks) < len(all_similar_tracks)-1 :
-        print('and from the 2nd source track:')
+        print('from the 2nd source track:')
         for i, result in enumerate(sonically_similar_tracks):
             print(f"{i+1}. {result.grandparentTitle}/{result.originalTitle} - {result.title}. rated '{result.userRating}'")	
     print('________________\n\n')
