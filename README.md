@@ -16,7 +16,7 @@ Usage:
 2. In Windows, create a folder for that script. In this folder, put the script- and the ini-file. Then open a terminal in that folder and hit python (scriptname).py
 
 # Categories
-1. Metadata Maintenance
+# 1. Metadata Maintenance
 - PlexAddTextToRecordLabel:For searching purposes, it might come handy to use the field "record label" (internally called studio) with text. 
 You can do that in the plex UI, but only for albums one by one or, if for a multitude for albums, by substituting the old text completely. 
 With this script, you preserve the existing text. Use "lockfields.py " to save your changes from altering.
@@ -37,7 +37,7 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - PlexExportRecentRatings: The script copies the user ratings of individual tracks in plex to the tags of mp3 and flac files, uses a time based approach
 
-2. Playlists
+# 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
 
 - Deduplicator; There are interesting scripts around (https://github.com/YoonAddicting/PlexSmartPlaylistDeduplicator) which avoid duplicates being played twice in a list by tagging the duplicates which are listed after the first track of the same name as "duplicate". Script so far not be tested by me because I want the track with the best quality played, not any one. A proper routine requires a very (!) good maintenance of the library, including same track titles, and a routine to compare both, tracks in an album by a specific artist and tracks in a compilation by various artist. See my blog for more details in the near future.
@@ -48,7 +48,7 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 The user can choose to add a second source track to the playlist to find more tracks or for variation. 
 Also, the rating is looked at and already rated tracks with a rating lesser than ***1/2 are sorted out.  
 
-3. Interoperability / Backups
+# 3. Interoperability / Backups
 - Export playlists for use in other software like Mediamonkey, foobar: https://forums.plex.tv/t/webtools-ng/598539
 - Playlist Import: Importing .m3u playlists into plex: https://github.com/gregchak/plex-playlist-import
 - PlexRecordingDate: script to query discogs and populate the Release Date field, see above
@@ -57,5 +57,5 @@ Also, the rating is looked at and already rated tracks with a rating lesser than
 - PlexExportRatingA-Z: The script copies the user ratings of individual tracks in plex to the tags of mp3 and flac files, uses an album by album approach
 - PlexExportRecentRatings: The script copies the user ratings of individual tracks in plex to the tags of mp3 and flac files, uses a time based approach
 
- 4. Plex Meta Manager configs
- - overlays; I like that the album covers in plex and plexamp show which codec (mp3 or flac) was used to encode the album tracks. Looks good too. That is achieved with the overlays-function in Plex Meta  Manager. Configs for use in PMM will come in here.
+ # 4. Plex Meta Manager configs
+ - overlays; I like that the album covers in plex and plexamp show which codec (mp3 or flac) was used to encode the album tracks. Looks good too. That is achieved with the overlays-function in Plex Meta  Manager.
