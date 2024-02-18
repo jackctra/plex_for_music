@@ -12,7 +12,7 @@ This is a continuing project. Possible Categories (found in the branches) are:
 4. Plex Meta Manager configs for music libraries
 
 Usage:
-1. All scripts point at a config.ini, in which you have to type your personal Plex configuration. The template is provided, has to be renamed to config.ini and completed. See the official documentation how to get your server-ip and token. You have to provide the name of your musiclibrary as well. 
+1. Most scripts point at a config.ini, in which you have to type your personal Plex configuration. The template is provided, has to be renamed to config.ini and completed. See the official documentation how to get your server-ip and token. You have to provide the name of your musiclibrary as well. 
 2. In Windows, create a folder for that script. In this folder, put the script- and the ini-file. Then open a terminal in that folder and hit python (scriptname).py
 
 # Categories
@@ -36,6 +36,8 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 - PlexExportRatingA-Z: The script copies the user ratings of individual tracks in plex to the tags of mp3 and flac files, uses an album by album approach
 
 - PlexExportRecentRatings: The script copies the user ratings of individual tracks in plex to the tags of mp3 and flac files, uses a time based approach
+
+- TrxGenres: The script displays the genres of the tracks in a given album, thus offering the album view which is still missing in plex. 
 
 # 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
