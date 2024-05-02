@@ -46,6 +46,8 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - Plex PlaylistAddMood: plex has no built in functionality to quickly assign a mood to all tracks in a playlist. This can come handy if you want to create playlists in the future based on a specific mood, i.e. for seasonal playlists like 'Christmas Songs'. The script asks for an existing playlist and adds a specific mood to all its tracks.
 
+- PlexPlaylistAssignRating: There is no builtin functionality to assign the same rating to all tracks in a playlist. This script helps say if you have imported externally created playlists.
+
 - Plex Trackradio: Creates a (sonically similar) radio playlist from a specific track as a source. It fills the playlist with tracks from the artist who has recorded the source track, and tracks from albums of other artists and from compilations. Sonic Similarity of the tracks and the number of tracks in the Radio playlist can be adjusted. Duplicates are sorted out if the tracks are tagged as either "Duplicate" or "X" in their moods field.  
 The user can choose to add a second source track to the playlist to find more tracks or for variation. 
 Also, the rating is looked at and already rated tracks with a rating lesser than ***1/2 are sorted out.  
