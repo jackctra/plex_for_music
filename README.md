@@ -37,6 +37,8 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - PlexExportRecentRatings: The script copies the user ratings of individual tracks in plex to the tags of mp3 and flac files, uses a time based approach
 
+- PlexReleaseTyper: Changes the releasetag of music files and refreshes the album to help grouping the albums (live albums, compilations, singles and EPs).
+
 - TrxGenres: The script displays the genres of the tracks in a given album, thus offering the album view which is still missing in plex. 
 
 # 2. Playlists
