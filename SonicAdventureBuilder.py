@@ -35,10 +35,10 @@ def find_track(track_title):
         return None
 
 def ensure_start_end_in_tracks(tracks, start_track, end_track):
-    # Überprüfen, ob der Starttrack in der Liste ist
+    
     if start_track not in tracks:
         tracks.insert(0, start_track)  # Füge den Starttrack an die erste Stelle hinzu
-    # Überprüfen, ob der Endtrack in der Liste ist
+   
     if end_track not in tracks:
         tracks.append(end_track)  # Füge den Endtrack an die letzte Stelle hinzu
     return tracks
