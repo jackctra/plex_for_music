@@ -50,6 +50,8 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - PlexPlaylistAssignRating: There is no builtin functionality to assign the same rating to all tracks in a playlist. This script helps say if you have imported externally created playlists.
 
+- PlexRemoveSongfromPlaylist: Script to identify a track and remove it from non-smart playlists.
+
 - SonicAdventureBuilder: Creates a Sonic Adventure with two tracks as endpoints and saves it to a playlist in plex.
 
 - Plex Trackradio: Creates a (sonically similar) radio playlist from a specific track as a source. It fills the playlist with tracks from the artist who has recorded the source track, and tracks from albums of other artists and from compilations. Sonic Similarity of the tracks and the number of tracks in the Radio playlist can be adjusted. Duplicates are sorted out if the tracks are tagged as either "Duplicate" or "X" in their moods field.  
