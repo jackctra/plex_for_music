@@ -39,7 +39,9 @@ With this script, you preserve the existing text. Use "lockfields.py " to save y
 
 - PlexReleaseTyper: Changes the releasetag of music files and refreshes the album to help grouping the albums (live albums, compilations, singles and EPs).
 
-- TrxGenres: The script displays the genres of the tracks in a given album, thus offering the album view which is still missing in plex. 
+- TrxGenres: The script displays the genres of the tracks in a given album, thus offering the album view which is still missing in plex.
+
+- CleanArtistBios: The script removes sentences referring to sources like Last.fm in the artist bios.
 
 # 2. Playlists
 - playlist to collection: For putting the contents of a playlist into a collection, see https://github.com/Casvt/Plex-scripts/blob/fc919f3cb23cd19424f50f861efc27d5bcb0719b/playlist_collection/playlist_to_collection.py. Why would you do that? In a collection, you can bulk alter fields to which you have no access in playlists.
