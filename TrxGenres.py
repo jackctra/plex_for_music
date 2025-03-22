@@ -3,7 +3,7 @@
 import plexapi
 from plexapi.server import PlexServer
 from plexapi.myplex import MyPlexAccount
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 
 # enter your credentials and the name of the library
 username = 'XXX'
