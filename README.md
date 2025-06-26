@@ -1,3 +1,9 @@
+# This Repository will be archived. Updated Scripts will be published in the new repository ‚PlexForMusic'
+---
+
+
+
+
 # plex-scripts for music libraries
 Repository for Scripts helping optimize Music Libraries in Plex.
 Plex is a great tool for listening to music especially with plexamp. However, there are some issues with keeping the database meaningful, correct and clean. As plex mostly is used for movies and tv shows, there are considerably less scripts for music libraries around.
